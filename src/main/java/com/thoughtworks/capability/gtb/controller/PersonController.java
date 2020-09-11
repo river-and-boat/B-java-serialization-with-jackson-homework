@@ -10,6 +10,8 @@ public class PersonController {
 
   @GetMapping("/persons/{id}")
   public PersonVo getPerson(@PathVariable("id") String id) {
-    return new PersonVo(id, null, "张三", null);
+
+    PersonVo personVo = new PersonVo(id, null, "张三", null);
+    return personVo;
   }
 }

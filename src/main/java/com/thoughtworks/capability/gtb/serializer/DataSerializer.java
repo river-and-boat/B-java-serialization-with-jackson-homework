@@ -5,8 +5,6 @@ import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
 import java.io.IOException;
-import java.time.Instant;
-import java.time.ZoneOffset;
 import java.util.Date;
 
 public class DataSerializer extends StdSerializer<Date> {
@@ -15,7 +13,8 @@ public class DataSerializer extends StdSerializer<Date> {
     }
 
     @Override
-    public void serialize(Date date, JsonGenerator gen, SerializerProvider provider) throws IOException {
+    public void serialize(Date date, JsonGenerator gen, SerializerProvider provider)
+            throws IOException {
         gen.writeNumber(String.valueOf(date.toInstant().toEpochMilli()));
     }
 }
