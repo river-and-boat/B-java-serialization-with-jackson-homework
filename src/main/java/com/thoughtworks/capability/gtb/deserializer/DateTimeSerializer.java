@@ -12,8 +12,8 @@ import java.util.Date;
  * @Date 2020/9/12 7:55
  * @Description ***
  **/
-public class DateTimeDeserializer extends StdSerializer<Date> {
-    protected DateTimeDeserializer() {
+public class DateTimeSerializer extends StdSerializer<Date> {
+    protected DateTimeSerializer() {
         super(Date.class);
     }
 
