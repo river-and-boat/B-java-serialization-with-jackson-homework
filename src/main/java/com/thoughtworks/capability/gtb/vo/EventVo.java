@@ -17,7 +17,6 @@ public class EventVo {
   private String id;
   private String name;
 
-
   private EventType type;
 
   @JsonSerialize(using = DateTimeSerializer.class)
