@@ -1,4 +1,4 @@
-package com.thoughtworks.capability.gtb.deserializer;
+package com.thoughtworks.capability.gtb.serializer;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
