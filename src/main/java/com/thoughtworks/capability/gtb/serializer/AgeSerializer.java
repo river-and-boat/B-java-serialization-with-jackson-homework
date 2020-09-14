@@ -14,10 +14,6 @@ public class AgeSerializer extends StdSerializer<Integer> {
     @Override
     public void serialize(Integer value, JsonGenerator gen, SerializerProvider provider)
             throws IOException {
-        if (value == null) {
-            gen.writeNumber(0);
-        } else {
-            gen.writeNumber(value);
-        }
+        gen.writeNumber(0);
     }
 }

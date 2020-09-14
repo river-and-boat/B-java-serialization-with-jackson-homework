@@ -6,6 +6,7 @@ import com.thoughtworks.capability.gtb.serializer.AgeSerializer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.validation.annotation.Validated;
 
 @Data
 @NoArgsConstructor
