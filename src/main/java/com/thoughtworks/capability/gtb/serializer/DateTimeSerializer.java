@@ -7,11 +7,6 @@ import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 import java.io.IOException;
 import java.util.Date;
 
-/**
- * @Auto Jiang Yuzhou
- * @Date 2020/9/12 7:55
- * @Description ***
- **/
 public class DateTimeSerializer extends StdSerializer<Date> {
     protected DateTimeSerializer() {
         super(Date.class);
